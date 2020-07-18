@@ -10,12 +10,17 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var window: NSWindow!
-
-
+    var windowController: NSWindowController!
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        let window = NSWindow(contentViewController: ViewController())
+        window.styleMask.insert(.resizable)
+        window.titleVisibility = .hidden
+
+        windowController = NSWindowController(window: window)
+        windowController.contentViewController = window.contentViewController
+        windowController.showWindow(nil)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

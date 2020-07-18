@@ -10,6 +10,20 @@
 		A911549F24B9F3EF009AEEFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911549E24B9F3EF009AEEFB /* AppDelegate.swift */; };
 		A91154A124B9F3F1009AEEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91154A024B9F3F1009AEEFB /* Assets.xcassets */; };
 		A91154A424B9F3F1009AEEFB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91154A224B9F3F1009AEEFB /* MainMenu.xib */; };
+		A91154AD24B9F425009AEEFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91154AC24B9F425009AEEFB /* ViewController.swift */; };
+		A91154B624B9F9B9009AEEFB /* ListViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91154B524B9F9B9009AEEFB /* ListViewLayout.swift */; };
+		A92534B424C3917900B9A1A1 /* OutlineTreeNodeRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */; };
+		A92534B624C3939900B9A1A1 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534B524C3939900B9A1A1 /* TweetCell.swift */; };
+		A92534B924C3A0BB00B9A1A1 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534B824C3A0BB00B9A1A1 /* Tweet.swift */; };
+		A92534BB24C3A26300B9A1A1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534BA24C3A26300B9A1A1 /* UserCell.swift */; };
+		A9ACF8A024C1F8CA00FF8C17 /* OutlineViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */; };
+		A9BDA05F24C10DE0006F6CFF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA05E24C10DE0006F6CFF /* ListView.swift */; };
+		A9BDA06124C11236006F6CFF /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06024C11236006F6CFF /* TextCell.swift */; };
+		A9BDA06324C11E38006F6CFF /* ListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06224C11E38006F6CFF /* ListCollectionView.swift */; };
+		A9BDA06924C12F7A006F6CFF /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06824C12F7A006F6CFF /* OutlineView.swift */; };
+		A9BDA06B24C1DA10006F6CFF /* OutlineTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06A24C1DA10006F6CFF /* OutlineTreeNode.swift */; };
+		A9BDA06D24C1E4F5006F6CFF /* DefaultGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06C24C1E4F5006F6CFF /* DefaultGroupView.swift */; };
+		A9BDA06F24C1E762006F6CFF /* DefaultOutlineItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +33,20 @@
 		A91154A324B9F3F1009AEEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A91154A524B9F3F1009AEEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A91154A624B9F3F1009AEEFB /* CollectionView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CollectionView.entitlements; sourceTree = "<group>"; };
+		A91154AC24B9F425009AEEFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A91154B524B9F9B9009AEEFB /* ListViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewLayout.swift; sourceTree = "<group>"; };
+		A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineTreeNodeRef.swift; sourceTree = "<group>"; };
+		A92534B524C3939900B9A1A1 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		A92534B824C3A0BB00B9A1A1 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		A92534BA24C3A26300B9A1A1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewBuilder.swift; sourceTree = "<group>"; };
+		A9BDA05E24C10DE0006F6CFF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A9BDA06024C11236006F6CFF /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		A9BDA06224C11E38006F6CFF /* ListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionView.swift; sourceTree = "<group>"; };
+		A9BDA06824C12F7A006F6CFF /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
+		A9BDA06A24C1DA10006F6CFF /* OutlineTreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineTreeNode.swift; sourceTree = "<group>"; };
+		A9BDA06C24C1E4F5006F6CFF /* DefaultGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGroupView.swift; sourceTree = "<group>"; };
+		A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOutlineItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,13 +79,59 @@
 		A911549D24B9F3EF009AEEFB /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				A911549E24B9F3EF009AEEFB /* AppDelegate.swift */,
+				A9BDA06724C12F6F006F6CFF /* OutlineView */,
+				A9BDA06624C12F61006F6CFF /* ListView */,
+				A91154AE24B9F578009AEEFB /* Resources */,
+				A92534B724C394C300B9A1A1 /* Demo */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		A91154AE24B9F578009AEEFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				A91154A024B9F3F1009AEEFB /* Assets.xcassets */,
 				A91154A224B9F3F1009AEEFB /* MainMenu.xib */,
 				A91154A524B9F3F1009AEEFB /* Info.plist */,
 				A91154A624B9F3F1009AEEFB /* CollectionView.entitlements */,
 			);
-			path = CollectionView;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A92534B724C394C300B9A1A1 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A911549E24B9F3EF009AEEFB /* AppDelegate.swift */,
+				A91154AC24B9F425009AEEFB /* ViewController.swift */,
+				A92534B824C3A0BB00B9A1A1 /* Tweet.swift */,
+				A9BDA06024C11236006F6CFF /* TextCell.swift */,
+				A92534B524C3939900B9A1A1 /* TweetCell.swift */,
+				A92534BA24C3A26300B9A1A1 /* UserCell.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		A9BDA06624C12F61006F6CFF /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				A91154B524B9F9B9009AEEFB /* ListViewLayout.swift */,
+				A9BDA05E24C10DE0006F6CFF /* ListView.swift */,
+				A9BDA06224C11E38006F6CFF /* ListCollectionView.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		A9BDA06724C12F6F006F6CFF /* OutlineView */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA06C24C1E4F5006F6CFF /* DefaultGroupView.swift */,
+				A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */,
+				A9BDA06824C12F7A006F6CFF /* OutlineView.swift */,
+				A9BDA06A24C1DA10006F6CFF /* OutlineTreeNode.swift */,
+				A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */,
+				A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */,
+			);
+			path = OutlineView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +204,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BDA06F24C1E762006F6CFF /* DefaultOutlineItemView.swift in Sources */,
+				A9ACF8A024C1F8CA00FF8C17 /* OutlineViewBuilder.swift in Sources */,
+				A9BDA06124C11236006F6CFF /* TextCell.swift in Sources */,
+				A92534B924C3A0BB00B9A1A1 /* Tweet.swift in Sources */,
+				A91154B624B9F9B9009AEEFB /* ListViewLayout.swift in Sources */,
+				A9BDA06324C11E38006F6CFF /* ListCollectionView.swift in Sources */,
+				A92534B424C3917900B9A1A1 /* OutlineTreeNodeRef.swift in Sources */,
+				A9BDA05F24C10DE0006F6CFF /* ListView.swift in Sources */,
+				A92534BB24C3A26300B9A1A1 /* UserCell.swift in Sources */,
+				A9BDA06D24C1E4F5006F6CFF /* DefaultGroupView.swift in Sources */,
+				A91154AD24B9F425009AEEFB /* ViewController.swift in Sources */,
+				A9BDA06B24C1DA10006F6CFF /* OutlineTreeNode.swift in Sources */,
+				A92534B624C3939900B9A1A1 /* TweetCell.swift in Sources */,
 				A911549F24B9F3EF009AEEFB /* AppDelegate.swift in Sources */,
+				A9BDA06924C12F7A006F6CFF /* OutlineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,12 +353,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CollectionView/CollectionView.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CollectionView/Resources/CollectionView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8STHWE4QY7;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = CollectionView/Info.plist;
+				INFOPLIST_FILE = CollectionView/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -285,12 +373,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CollectionView/CollectionView.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CollectionView/Resources/CollectionView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8STHWE4QY7;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = CollectionView/Info.plist;
+				INFOPLIST_FILE = CollectionView/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
