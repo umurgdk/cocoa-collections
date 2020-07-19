@@ -8,27 +8,15 @@
 
 import AppKit
 
-protocol UserInterfaceIdentifiable {
-    static var identifier: NSUserInterfaceItemIdentifier { get }
-}
-
-class OutlineView<Item: OutlineTreeNode>: NSView, NSOutlineViewDataSource, NSOutlineViewDelegate {
+public class OutlineView: NSView, NSOutlineViewDataSource, NSOutlineViewDelegate {
     let scrollView = NSScrollView()
     let outlineView = NSOutlineView()
 
-    let rootNodes: [OutlineTreeNodeRef]
-    let viewBuilder: OutlineViewBuilder<Item>
+    var rootNodes: [OutlineTreeNodeRef] = []
 
-    var onSelectionChange: (IndexPath) -> Void = { _ in
-    }
+    public var onSelectionChange: (IndexPath) -> Void = { _ in }
 
-    init(rootNodes: [Item], viewBuilder: OutlineViewBuilder<Item>) {
-        // TODO: Is it possible to create tree node refs on demand?
-        self.rootNodes = rootNodes.enumerated().map { index, node in
-            OutlineTreeNodeRef(node, isGroup: true, viewBuilder: viewBuilder, indexPath: [index])
-        }
-        
-        self.viewBuilder = viewBuilder
+    public init() {
         super.init(frame: .zero)
 
         addSubview(scrollView)
@@ -43,7 +31,7 @@ class OutlineView<Item: OutlineTreeNode>: NSView, NSOutlineViewDataSource, NSOut
         outlineView.autosaveTableColumns = true
         outlineView.indentationPerLevel = 20
 
-        let column = NSTableColumn(identifier: viewBuilder.childBuilder.viewIdentifier)
+        let column = NSTableColumn(identifier: .init("OutlineViewColumn"))
         outlineView.addTableColumn(column)
         outlineView.outlineTableColumn = column
 
@@ -65,12 +53,36 @@ class OutlineView<Item: OutlineTreeNode>: NSView, NSOutlineViewDataSource, NSOut
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    public func reloadData() {
+        outlineView.reloadData()
+    }
+    
+    public func addSection<Item, ViewBuilder>(_ title: String, nodes: [Item], viewBuilder: ViewBuilder)
+        where ViewBuilder: OutlineNestedViewBuilder,
+              ViewBuilder.Item == Item
+    {
+        let section = OutlineSection(title: title, children: nodes)
+        let viewBuilder = OutlineGroupHeaderViewBuilder().withChild(viewBuilder)
+        let nodeRef = viewBuilder.makeTreeNodeRef(section, isGroup: true, indexPath: [rootNodes.count])
+        rootNodes.append(nodeRef)
+    }
+    
+    public func addSection<Item, ViewBuilder>(_ title: String, nodes: [Item], viewBuilder: ViewBuilder)
+        where ViewBuilder: OutlineViewBuilder,
+              ViewBuilder.Item == Item
+    {
+        let section = OutlineSection(title: title, children: nodes)
+        let viewBuilder = OutlineGroupHeaderViewBuilder().withChild(viewBuilder)
+        let nodeRef = viewBuilder.makeTreeNodeRef(section, isGroup: true, indexPath: [rootNodes.count])
+        rootNodes.append(nodeRef)
+    }
 
-    func outlineView(_ outlineView: NSOutlineView, isGroupItem item: Any) -> Bool {
+    public func outlineView(_ outlineView: NSOutlineView, isGroupItem item: Any) -> Bool {
         (item as? OutlineTreeNodeRef)?.isGroup ?? false
     }
 
-    func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem item: Any?) -> Int {
+    public func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem item: Any?) -> Int {
         guard let item = item as? OutlineTreeNodeRef else {
             return rootNodes.count
         }
@@ -78,7 +90,7 @@ class OutlineView<Item: OutlineTreeNode>: NSView, NSOutlineViewDataSource, NSOut
         return item.children.count
     }
 
-    func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem item: Any?) -> Any {
+    public func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem item: Any?) -> Any {
         guard let item = item as? OutlineTreeNodeRef else {
             return rootNodes[index]
         }
@@ -86,7 +98,7 @@ class OutlineView<Item: OutlineTreeNode>: NSView, NSOutlineViewDataSource, NSOut
         return item.children[index]
     }
 
-    func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NSTableColumn?, item: Any) -> NSView? {
+    public func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NSTableColumn?, item: Any) -> NSView? {
         guard let item = item as? OutlineTreeNodeRef else {
             return nil
         }
@@ -96,7 +108,7 @@ class OutlineView<Item: OutlineTreeNode>: NSView, NSOutlineViewDataSource, NSOut
         return view
     }
 
-    func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: Any) -> Bool {
+    public func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: Any) -> Bool {
         guard let item = item as? OutlineTreeNodeRef else {
             fatalError("unexpected item type")
         }
@@ -104,7 +116,7 @@ class OutlineView<Item: OutlineTreeNode>: NSView, NSOutlineViewDataSource, NSOut
         return item.children.count > 0
     }
 
-    func outlineView(_ outlineView: NSOutlineView, shouldSelectItem item: Any) -> Bool {
+    public func outlineView(_ outlineView: NSOutlineView, shouldSelectItem item: Any) -> Bool {
         guard let item = item as? OutlineTreeNodeRef else {
             fatalError("unexpected item type")
         }
@@ -112,7 +124,7 @@ class OutlineView<Item: OutlineTreeNode>: NSView, NSOutlineViewDataSource, NSOut
         return !item.isGroup
     }
 
-    func outlineViewSelectionDidChange(_ notification: Notification) {
+    public func outlineViewSelectionDidChange(_ notification: Notification) {
         let row = outlineView.selectedRow
 
         guard let item = outlineView.item(atRow: row) as? OutlineTreeNodeRef,

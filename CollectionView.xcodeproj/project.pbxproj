@@ -12,45 +12,87 @@
 		A91154A424B9F3F1009AEEFB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91154A224B9F3F1009AEEFB /* MainMenu.xib */; };
 		A91154AD24B9F425009AEEFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91154AC24B9F425009AEEFB /* ViewController.swift */; };
 		A91154B624B9F9B9009AEEFB /* ListViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91154B524B9F9B9009AEEFB /* ListViewLayout.swift */; };
-		A92534B424C3917900B9A1A1 /* OutlineTreeNodeRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */; };
 		A92534B624C3939900B9A1A1 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534B524C3939900B9A1A1 /* TweetCell.swift */; };
 		A92534B924C3A0BB00B9A1A1 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534B824C3A0BB00B9A1A1 /* Tweet.swift */; };
 		A92534BB24C3A26300B9A1A1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534BA24C3A26300B9A1A1 /* UserCell.swift */; };
-		A9ACF8A024C1F8CA00FF8C17 /* OutlineViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */; };
+		A92534BF24C4A6A500B9A1A1 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534BE24C4A6A500B9A1A1 /* Tree.swift */; };
+		A92534C924C4BBAA00B9A1A1 /* OutlineView.h in Headers */ = {isa = PBXBuildFile; fileRef = A92534C724C4BBAA00B9A1A1 /* OutlineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92534CC24C4BBAA00B9A1A1 /* OutlineView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92534C524C4BBAA00B9A1A1 /* OutlineView.framework */; };
+		A92534CD24C4BBAA00B9A1A1 /* OutlineView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92534C524C4BBAA00B9A1A1 /* OutlineView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A92534D224C4BBC000B9A1A1 /* OutlineViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */; };
+		A92534D324C4BBC000B9A1A1 /* OutlineTreeNodeRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */; };
+		A92534D424C4BBC000B9A1A1 /* DefaultOutlineItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */; };
+		A92534D524C4BBC000B9A1A1 /* DefaultOutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06C24C1E4F5006F6CFF /* DefaultOutlineGroupView.swift */; };
+		A92534D624C4BBC000B9A1A1 /* OutlineSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534BC24C3CEF900B9A1A1 /* OutlineSection.swift */; };
+		A92534D724C4BBC000B9A1A1 /* OutlineTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06A24C1DA10006F6CFF /* OutlineTreeNode.swift */; };
+		A92534D824C4BBC000B9A1A1 /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06824C12F7A006F6CFF /* OutlineView.swift */; };
 		A9BDA05F24C10DE0006F6CFF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA05E24C10DE0006F6CFF /* ListView.swift */; };
 		A9BDA06124C11236006F6CFF /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06024C11236006F6CFF /* TextCell.swift */; };
 		A9BDA06324C11E38006F6CFF /* ListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06224C11E38006F6CFF /* ListCollectionView.swift */; };
-		A9BDA06924C12F7A006F6CFF /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06824C12F7A006F6CFF /* OutlineView.swift */; };
-		A9BDA06B24C1DA10006F6CFF /* OutlineTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06A24C1DA10006F6CFF /* OutlineTreeNode.swift */; };
-		A9BDA06D24C1E4F5006F6CFF /* DefaultGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06C24C1E4F5006F6CFF /* DefaultGroupView.swift */; };
-		A9BDA06F24C1E762006F6CFF /* DefaultOutlineItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A92534CA24C4BBAA00B9A1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A911549324B9F3EF009AEEFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92534C424C4BBAA00B9A1A1;
+			remoteInfo = CollectionView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A92534D124C4BBAA00B9A1A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A92534CD24C4BBAA00B9A1A1 /* OutlineView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A911549B24B9F3EF009AEEFB /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A911549B24B9F3EF009AEEFB /* CollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A911549E24B9F3EF009AEEFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A91154A024B9F3F1009AEEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A91154A324B9F3F1009AEEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A91154A524B9F3F1009AEEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A91154A624B9F3F1009AEEFB /* CollectionView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CollectionView.entitlements; sourceTree = "<group>"; };
+		A91154A624B9F3F1009AEEFB /* CollectionViewDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CollectionViewDemo.entitlements; sourceTree = "<group>"; };
 		A91154AC24B9F425009AEEFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A91154B524B9F9B9009AEEFB /* ListViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewLayout.swift; sourceTree = "<group>"; };
 		A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineTreeNodeRef.swift; sourceTree = "<group>"; };
 		A92534B524C3939900B9A1A1 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		A92534B824C3A0BB00B9A1A1 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		A92534BA24C3A26300B9A1A1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		A92534BC24C3CEF900B9A1A1 /* OutlineSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineSection.swift; sourceTree = "<group>"; };
+		A92534BE24C4A6A500B9A1A1 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		A92534C524C4BBAA00B9A1A1 /* OutlineView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OutlineView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92534C724C4BBAA00B9A1A1 /* OutlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutlineView.h; sourceTree = "<group>"; };
+		A92534C824C4BBAA00B9A1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewBuilder.swift; sourceTree = "<group>"; };
 		A9BDA05E24C10DE0006F6CFF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		A9BDA06024C11236006F6CFF /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		A9BDA06224C11E38006F6CFF /* ListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionView.swift; sourceTree = "<group>"; };
 		A9BDA06824C12F7A006F6CFF /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
 		A9BDA06A24C1DA10006F6CFF /* OutlineTreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineTreeNode.swift; sourceTree = "<group>"; };
-		A9BDA06C24C1E4F5006F6CFF /* DefaultGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGroupView.swift; sourceTree = "<group>"; };
+		A9BDA06C24C1E4F5006F6CFF /* DefaultOutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOutlineGroupView.swift; sourceTree = "<group>"; };
 		A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOutlineItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A911549824B9F3EF009AEEFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92534CC24C4BBAA00B9A1A1 /* OutlineView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92534C224C4BBAA00B9A1A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,7 +105,8 @@
 		A911549224B9F3EF009AEEFB = {
 			isa = PBXGroup;
 			children = (
-				A911549D24B9F3EF009AEEFB /* CollectionView */,
+				A911549D24B9F3EF009AEEFB /* CollectionViewDemo */,
+				A92534C624C4BBAA00B9A1A1 /* OutlineView */,
 				A911549C24B9F3EF009AEEFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,20 +114,20 @@
 		A911549C24B9F3EF009AEEFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A911549B24B9F3EF009AEEFB /* CollectionView.app */,
+				A911549B24B9F3EF009AEEFB /* CollectionViewDemo.app */,
+				A92534C524C4BBAA00B9A1A1 /* OutlineView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A911549D24B9F3EF009AEEFB /* CollectionView */ = {
+		A911549D24B9F3EF009AEEFB /* CollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A9BDA06724C12F6F006F6CFF /* OutlineView */,
 				A9BDA06624C12F61006F6CFF /* ListView */,
 				A91154AE24B9F578009AEEFB /* Resources */,
 				A92534B724C394C300B9A1A1 /* Demo */,
 			);
-			path = CollectionView;
+			path = CollectionViewDemo;
 			sourceTree = "<group>";
 		};
 		A91154AE24B9F578009AEEFB /* Resources */ = {
@@ -93,7 +136,7 @@
 				A91154A024B9F3F1009AEEFB /* Assets.xcassets */,
 				A91154A224B9F3F1009AEEFB /* MainMenu.xib */,
 				A91154A524B9F3F1009AEEFB /* Info.plist */,
-				A91154A624B9F3F1009AEEFB /* CollectionView.entitlements */,
+				A91154A624B9F3F1009AEEFB /* CollectionViewDemo.entitlements */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -107,8 +150,25 @@
 				A9BDA06024C11236006F6CFF /* TextCell.swift */,
 				A92534B524C3939900B9A1A1 /* TweetCell.swift */,
 				A92534BA24C3A26300B9A1A1 /* UserCell.swift */,
+				A92534BE24C4A6A500B9A1A1 /* Tree.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		A92534C624C4BBAA00B9A1A1 /* OutlineView */ = {
+			isa = PBXGroup;
+			children = (
+				A9BDA06C24C1E4F5006F6CFF /* DefaultOutlineGroupView.swift */,
+				A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */,
+				A9BDA06824C12F7A006F6CFF /* OutlineView.swift */,
+				A9BDA06A24C1DA10006F6CFF /* OutlineTreeNode.swift */,
+				A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */,
+				A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */,
+				A92534BC24C3CEF900B9A1A1 /* OutlineSection.swift */,
+				A92534C724C4BBAA00B9A1A1 /* OutlineView.h */,
+				A92534C824C4BBAA00B9A1A1 /* Info.plist */,
+			);
+			path = OutlineView;
 			sourceTree = "<group>";
 		};
 		A9BDA06624C12F61006F6CFF /* ListView */ = {
@@ -121,38 +181,56 @@
 			path = ListView;
 			sourceTree = "<group>";
 		};
-		A9BDA06724C12F6F006F6CFF /* OutlineView */ = {
-			isa = PBXGroup;
-			children = (
-				A9BDA06C24C1E4F5006F6CFF /* DefaultGroupView.swift */,
-				A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */,
-				A9BDA06824C12F7A006F6CFF /* OutlineView.swift */,
-				A9BDA06A24C1DA10006F6CFF /* OutlineTreeNode.swift */,
-				A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */,
-				A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */,
-			);
-			path = OutlineView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A92534C024C4BBAA00B9A1A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92534C924C4BBAA00B9A1A1 /* OutlineView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		A911549A24B9F3EF009AEEFB /* CollectionView */ = {
+		A911549A24B9F3EF009AEEFB /* CollectionViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A91154A924B9F3F1009AEEFB /* Build configuration list for PBXNativeTarget "CollectionView" */;
+			buildConfigurationList = A91154A924B9F3F1009AEEFB /* Build configuration list for PBXNativeTarget "CollectionViewDemo" */;
 			buildPhases = (
 				A911549724B9F3EF009AEEFB /* Sources */,
 				A911549824B9F3EF009AEEFB /* Frameworks */,
 				A911549924B9F3EF009AEEFB /* Resources */,
+				A92534D124C4BBAA00B9A1A1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A92534CB24C4BBAA00B9A1A1 /* PBXTargetDependency */,
+			);
+			name = CollectionViewDemo;
+			productName = CollectionView;
+			productReference = A911549B24B9F3EF009AEEFB /* CollectionViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A92534C424C4BBAA00B9A1A1 /* OutlineView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92534CE24C4BBAA00B9A1A1 /* Build configuration list for PBXNativeTarget "OutlineView" */;
+			buildPhases = (
+				A92534C024C4BBAA00B9A1A1 /* Headers */,
+				A92534C124C4BBAA00B9A1A1 /* Sources */,
+				A92534C224C4BBAA00B9A1A1 /* Frameworks */,
+				A92534C324C4BBAA00B9A1A1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CollectionView;
+			name = OutlineView;
 			productName = CollectionView;
-			productReference = A911549B24B9F3EF009AEEFB /* CollectionView.app */;
-			productType = "com.apple.product-type.application";
+			productReference = A92534C524C4BBAA00B9A1A1 /* OutlineView.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -165,6 +243,9 @@
 				ORGANIZATIONNAME = "Umur Gedik";
 				TargetAttributes = {
 					A911549A24B9F3EF009AEEFB = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A92534C424C4BBAA00B9A1A1 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -182,7 +263,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A911549A24B9F3EF009AEEFB /* CollectionView */,
+				A911549A24B9F3EF009AEEFB /* CollectionViewDemo */,
+				A92534C424C4BBAA00B9A1A1 /* OutlineView */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +279,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A92534C324C4BBAA00B9A1A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -204,25 +293,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9BDA06F24C1E762006F6CFF /* DefaultOutlineItemView.swift in Sources */,
-				A9ACF8A024C1F8CA00FF8C17 /* OutlineViewBuilder.swift in Sources */,
 				A9BDA06124C11236006F6CFF /* TextCell.swift in Sources */,
 				A92534B924C3A0BB00B9A1A1 /* Tweet.swift in Sources */,
 				A91154B624B9F9B9009AEEFB /* ListViewLayout.swift in Sources */,
 				A9BDA06324C11E38006F6CFF /* ListCollectionView.swift in Sources */,
-				A92534B424C3917900B9A1A1 /* OutlineTreeNodeRef.swift in Sources */,
 				A9BDA05F24C10DE0006F6CFF /* ListView.swift in Sources */,
 				A92534BB24C3A26300B9A1A1 /* UserCell.swift in Sources */,
-				A9BDA06D24C1E4F5006F6CFF /* DefaultGroupView.swift in Sources */,
+				A92534BF24C4A6A500B9A1A1 /* Tree.swift in Sources */,
 				A91154AD24B9F425009AEEFB /* ViewController.swift in Sources */,
-				A9BDA06B24C1DA10006F6CFF /* OutlineTreeNode.swift in Sources */,
 				A92534B624C3939900B9A1A1 /* TweetCell.swift in Sources */,
 				A911549F24B9F3EF009AEEFB /* AppDelegate.swift in Sources */,
-				A9BDA06924C12F7A006F6CFF /* OutlineView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92534C124C4BBAA00B9A1A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92534D724C4BBC000B9A1A1 /* OutlineTreeNode.swift in Sources */,
+				A92534D324C4BBC000B9A1A1 /* OutlineTreeNodeRef.swift in Sources */,
+				A92534D424C4BBC000B9A1A1 /* DefaultOutlineItemView.swift in Sources */,
+				A92534D524C4BBC000B9A1A1 /* DefaultOutlineGroupView.swift in Sources */,
+				A92534D224C4BBC000B9A1A1 /* OutlineViewBuilder.swift in Sources */,
+				A92534D624C4BBC000B9A1A1 /* OutlineSection.swift in Sources */,
+				A92534D824C4BBC000B9A1A1 /* OutlineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A92534CB24C4BBAA00B9A1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92534C424C4BBAA00B9A1A1 /* OutlineView */;
+			targetProxy = A92534CA24C4BBAA00B9A1A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A91154A224B9F3F1009AEEFB /* MainMenu.xib */ = {
@@ -268,6 +374,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = CollectionViewDemo/Resources/CollectionViewDemo.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -328,6 +435,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = CollectionViewDemo/Resources/CollectionViewDemo.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -352,18 +460,19 @@
 		A91154AA24B9F3F1009AEEFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CollectionView/Resources/CollectionView.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CollectionViewDemo/Resources/CollectionViewDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8STHWE4QY7;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = CollectionView/Resources/Info.plist;
+				INFOPLIST_FILE = CollectionViewDemo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.umurgdk.CollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = io.umurgdk.CollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -372,20 +481,75 @@
 		A91154AB24B9F3F1009AEEFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CollectionView/Resources/CollectionView.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CollectionViewDemo/Resources/CollectionViewDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8STHWE4QY7;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = CollectionView/Resources/Info.plist;
+				INFOPLIST_FILE = CollectionViewDemo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.umurgdk.CollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = io.umurgdk.CollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A92534CF24C4BBAA00B9A1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8STHWE4QY7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OutlineView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.umurgdk.OutlineView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A92534D024C4BBAA00B9A1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8STHWE4QY7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OutlineView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.umurgdk.OutlineView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -401,11 +565,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A91154A924B9F3F1009AEEFB /* Build configuration list for PBXNativeTarget "CollectionView" */ = {
+		A91154A924B9F3F1009AEEFB /* Build configuration list for PBXNativeTarget "CollectionViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A91154AA24B9F3F1009AEEFB /* Debug */,
 				A91154AB24B9F3F1009AEEFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92534CE24C4BBAA00B9A1A1 /* Build configuration list for PBXNativeTarget "OutlineView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92534CF24C4BBAA00B9A1A1 /* Debug */,
+				A92534D024C4BBAA00B9A1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

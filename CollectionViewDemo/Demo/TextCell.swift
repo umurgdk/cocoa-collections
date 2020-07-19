@@ -39,14 +39,10 @@ class TextCell: NSCollectionViewItem, ListViewCell {
     
     override func loadView() {
         let view = NSView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         view.wantsLayer = true
         view.addSubview(textView)
-        NSLayoutConstraint.activate([
-            view.leftAnchor.constraint(equalTo: textView.leftAnchor),
-            view.rightAnchor.constraint(equalTo: textView.rightAnchor),
-            view.bottomAnchor.constraint(equalTo: textView.bottomAnchor),
-            view.topAnchor.constraint(equalTo: textView.topAnchor)
-        ])
+        NSLayoutConstraint.activate(textView.filling(superview: view))
         
         self.view = view
     }
@@ -55,8 +51,9 @@ class TextCell: NSCollectionViewItem, ListViewCell {
         previousTextWidth = 0
     }
     
-    func configure(with string: String) {
+    func configure(with string: String) -> Self {
         textView.stringValue = string
+        return self
     }
     
     override func preferredLayoutAttributesFitting(_ layoutAttributes: NSCollectionViewLayoutAttributes) -> NSCollectionViewLayoutAttributes {

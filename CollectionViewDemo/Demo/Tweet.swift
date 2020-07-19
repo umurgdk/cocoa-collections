@@ -11,6 +11,10 @@ import Foundation
 struct Tweet {
     let author: String
     let thumbnailURL: URL
-    let likes: Int
-    let mentions: [String]
+    let followers: [TweetUser]
+}
+
+struct TweetUser {
+    let name: String
+    let popular: [String]
 }

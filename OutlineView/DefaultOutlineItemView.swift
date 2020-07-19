@@ -8,12 +8,21 @@
 
 import AppKit
 
-class DefaultOutlineItemView: NSTableCellView, UserInterfaceIdentifiable {
+public struct OutlineItemViewBuilder<Item>: OutlineViewBuilder {
+    public let builder: (Item, DefaultOutlineItemView) -> Void
+    public func build(_ item: Item, for outlineView: NSOutlineView) -> NSTableCellView {
+        let cell = DefaultOutlineItemView()
+        builder(item, cell)
+        return cell
+    }
+}
+
+public class DefaultOutlineItemView: NSTableCellView {
     static let identifier = NSUserInterfaceItemIdentifier(String(describing: DefaultOutlineItemView.self))
     private let iconView = NSImageView()
     private let titleView = NSTextField(labelWithString: "")
 
-    init() {
+    public init() {
         super.init(frame: .zero)
 
         iconView.translatesAutoresizingMaskIntoConstraints = false
@@ -30,8 +39,12 @@ class DefaultOutlineItemView: NSTableCellView, UserInterfaceIdentifiable {
         stackView.addArrangedSubview(titleView)
 
         addSubview(stackView)
-        NSLayoutConstraint.activate(stackView.filling(superview: self))
         NSLayoutConstraint.activate([
+            stackView.leftAnchor.constraint(equalTo: leftAnchor),
+            stackView.rightAnchor.constraint(equalTo: rightAnchor),
+            stackView.topAnchor.constraint(equalTo: topAnchor),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            
             iconView.widthAnchor.constraint(equalToConstant: 12),
             iconView.heightAnchor.constraint(equalTo: iconView.widthAnchor)
         ])
@@ -41,13 +54,13 @@ class DefaultOutlineItemView: NSTableCellView, UserInterfaceIdentifiable {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func prepareForReuse() {
+    override public func prepareForReuse() {
         iconView.image = nil
         titleView.stringValue = ""
         super.prepareForReuse()
     }
 
-    func configure(with title: String, image: NSImage? = nil) {
+    public func configure(with title: String, image: NSImage? = nil) {
         iconView.isHidden = image == nil
         iconView.image = image
         titleView.stringValue = title
