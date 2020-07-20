@@ -74,6 +74,7 @@
 		A92534C724C4BBAA00B9A1A1 /* OutlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutlineView.h; sourceTree = "<group>"; };
 		A92534C824C4BBAA00B9A1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewBuilder.swift; sourceTree = "<group>"; };
+		A9B77A1F24C5A57800250928 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A9BDA05E24C10DE0006F6CFF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		A9BDA06024C11236006F6CFF /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		A9BDA06224C11E38006F6CFF /* ListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionView.swift; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 		A911549224B9F3EF009AEEFB = {
 			isa = PBXGroup;
 			children = (
+				A9B77A1F24C5A57800250928 /* README.md */,
 				A911549D24B9F3EF009AEEFB /* CollectionViewDemo */,
 				A92534C624C4BBAA00B9A1A1 /* OutlineView */,
 				A911549C24B9F3EF009AEEFB /* Products */,
