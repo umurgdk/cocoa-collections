@@ -6,6 +6,8 @@ Type safe collection view wrappers for AppKit.
 
 NOTE: OutlineView implementation contains it's own ScrollView. This might change in the future.
 
+![Screenshot of outline view examples](/screenshots/OutlineDemo.png?raw=true "OutlineView Demo")
+
 ### Custom data structure example, each nested structure's type is different
 
 ```swift
