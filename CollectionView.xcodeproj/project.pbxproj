@@ -20,7 +20,7 @@
 		A92534CC24C4BBAA00B9A1A1 /* OutlineView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92534C524C4BBAA00B9A1A1 /* OutlineView.framework */; };
 		A92534CD24C4BBAA00B9A1A1 /* OutlineView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A92534C524C4BBAA00B9A1A1 /* OutlineView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A92534D224C4BBC000B9A1A1 /* OutlineViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */; };
-		A92534D324C4BBC000B9A1A1 /* OutlineTreeNodeRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */; };
+		A92534D324C4BBC000B9A1A1 /* OutlineViewItemRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534B324C3917900B9A1A1 /* OutlineViewItemRef.swift */; };
 		A92534D424C4BBC000B9A1A1 /* DefaultOutlineItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */; };
 		A92534D524C4BBC000B9A1A1 /* DefaultOutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BDA06C24C1E4F5006F6CFF /* DefaultOutlineGroupView.swift */; };
 		A92534D624C4BBC000B9A1A1 /* OutlineSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92534BC24C3CEF900B9A1A1 /* OutlineSection.swift */; };
@@ -64,7 +64,7 @@
 		A91154A624B9F3F1009AEEFB /* CollectionViewDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CollectionViewDemo.entitlements; sourceTree = "<group>"; };
 		A91154AC24B9F425009AEEFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A91154B524B9F9B9009AEEFB /* ListViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewLayout.swift; sourceTree = "<group>"; };
-		A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineTreeNodeRef.swift; sourceTree = "<group>"; };
+		A92534B324C3917900B9A1A1 /* OutlineViewItemRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewItemRef.swift; sourceTree = "<group>"; };
 		A92534B524C3939900B9A1A1 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		A92534B824C3A0BB00B9A1A1 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		A92534BA24C3A26300B9A1A1 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 				A9BDA06E24C1E762006F6CFF /* DefaultOutlineItemView.swift */,
 				A9BDA06824C12F7A006F6CFF /* OutlineView.swift */,
 				A9BDA06A24C1DA10006F6CFF /* OutlineTreeNode.swift */,
-				A92534B324C3917900B9A1A1 /* OutlineTreeNodeRef.swift */,
+				A92534B324C3917900B9A1A1 /* OutlineViewItemRef.swift */,
 				A9ACF89F24C1F8CA00FF8C17 /* OutlineViewBuilder.swift */,
 				A92534BC24C3CEF900B9A1A1 /* OutlineSection.swift */,
 				A92534C724C4BBAA00B9A1A1 /* OutlineView.h */,
@@ -311,7 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92534D724C4BBC000B9A1A1 /* OutlineTreeNode.swift in Sources */,
-				A92534D324C4BBC000B9A1A1 /* OutlineTreeNodeRef.swift in Sources */,
+				A92534D324C4BBC000B9A1A1 /* OutlineViewItemRef.swift in Sources */,
 				A92534D424C4BBC000B9A1A1 /* DefaultOutlineItemView.swift in Sources */,
 				A92534D524C4BBC000B9A1A1 /* DefaultOutlineGroupView.swift in Sources */,
 				A92534D224C4BBC000B9A1A1 /* OutlineViewBuilder.swift in Sources */,

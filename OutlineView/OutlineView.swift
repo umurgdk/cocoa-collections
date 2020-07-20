@@ -12,7 +12,7 @@ public class OutlineView: NSView, NSOutlineViewDataSource, NSOutlineViewDelegate
     let scrollView = NSScrollView()
     let outlineView = NSOutlineView()
 
-    var rootNodes: [OutlineTreeNodeRef] = []
+    var rootNodes: [OutlineViewItemRef] = []
 
     public var onSelectionChange: (IndexPath) -> Void = { _ in }
 
@@ -79,11 +79,11 @@ public class OutlineView: NSView, NSOutlineViewDataSource, NSOutlineViewDelegate
     }
 
     public func outlineView(_ outlineView: NSOutlineView, isGroupItem item: Any) -> Bool {
-        (item as? OutlineTreeNodeRef)?.isGroup ?? false
+        (item as? OutlineViewItemRef)?.isGroup ?? false
     }
 
     public func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem item: Any?) -> Int {
-        guard let item = item as? OutlineTreeNodeRef else {
+        guard let item = item as? OutlineViewItemRef else {
             return rootNodes.count
         }
 
@@ -91,7 +91,7 @@ public class OutlineView: NSView, NSOutlineViewDataSource, NSOutlineViewDelegate
     }
 
     public func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem item: Any?) -> Any {
-        guard let item = item as? OutlineTreeNodeRef else {
+        guard let item = item as? OutlineViewItemRef else {
             return rootNodes[index]
         }
 
@@ -99,7 +99,7 @@ public class OutlineView: NSView, NSOutlineViewDataSource, NSOutlineViewDelegate
     }
 
     public func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NSTableColumn?, item: Any) -> NSView? {
-        guard let item = item as? OutlineTreeNodeRef else {
+        guard let item = item as? OutlineViewItemRef else {
             return nil
         }
 
@@ -109,7 +109,7 @@ public class OutlineView: NSView, NSOutlineViewDataSource, NSOutlineViewDelegate
     }
 
     public func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: Any) -> Bool {
-        guard let item = item as? OutlineTreeNodeRef else {
+        guard let item = item as? OutlineViewItemRef else {
             fatalError("unexpected item type")
         }
 
@@ -117,7 +117,7 @@ public class OutlineView: NSView, NSOutlineViewDataSource, NSOutlineViewDelegate
     }
 
     public func outlineView(_ outlineView: NSOutlineView, shouldSelectItem item: Any) -> Bool {
-        guard let item = item as? OutlineTreeNodeRef else {
+        guard let item = item as? OutlineViewItemRef else {
             fatalError("unexpected item type")
         }
 
@@ -127,7 +127,7 @@ public class OutlineView: NSView, NSOutlineViewDataSource, NSOutlineViewDelegate
     public func outlineViewSelectionDidChange(_ notification: Notification) {
         let row = outlineView.selectedRow
 
-        guard let item = outlineView.item(atRow: row) as? OutlineTreeNodeRef,
+        guard let item = outlineView.item(atRow: row) as? OutlineViewItemRef,
               !item.isGroup else {
             return
         }

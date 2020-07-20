@@ -8,11 +8,11 @@
 
 import Foundation
 
-public struct OutlineSection<Node>: OutlineTreeNode {
-    public typealias Child = Node
-    public let title: String
-    public let children: [Node]
+struct OutlineSection<Node>: OutlineTreeNode {
+    typealias Child = Node
+    let title: String
+    let children: [Node]
     
-    public var numberOfChildren: Int { children.count }
-    public func child(at index: Int) -> Node? { children[index] }
+    var numberOfChildren: Int { children.count }
+    func child(at index: Int) -> Node? { children[index] }
 }
